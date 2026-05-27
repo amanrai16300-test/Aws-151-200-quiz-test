@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AWS SAA-C03 Quiz 151-200</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <noscript>
+    <div class="noscript">
+      JavaScript is blocked. This quiz needs JavaScript. Open the GitHub Pages link in Safari or Chrome and turn JavaScript on.
+    </div>
+  </noscript>
+
+  <header class="topbar">
+    <div>
+      <h1>AWS SAA-C03 Quiz</h1>
+      <p>Questions 151-200. Random question order, not PDF sequence. Options shuffle inside each question.</p>
+    </div>
+    <button id="pauseTopBtn" class="ghost" disabled>Pause</button>
+  </header>
+
+  <main class="wrap">
+    <section id="diagnostic" class="card warning">
+      JavaScript has not started yet. If this message stays visible, the preview is blocking scripts. Upload these files to GitHub Pages and open the live website link.
+    </section>
+
+    <section id="introCard" class="card hero">
+      <h2>Questions 151-200</h2>
+      <p>This page uses all 50 questions from the 151-200 range.</p>
+      <ul>
+        <li>Question order is random, not PDF sequence.</li>
+        <li>Options shuffle inside each question.</li>
+        <li>After finishing, Start New Random Test reshuffles everything.</li>
+        <li>Pause and resume work even after closing the browser.</li>
+      </ul>
+      <div class="actions">
+        <button id="startBtn" class="primary">Start / Resume Quiz</button>
+        <button id="newFromIntroBtn" class="secondary">Start New Random Test</button>
+      </div>
+    </section>
+
+    <section id="pausedCard" class="card hidden">
+      <h2>Quiz paused</h2>
+      <p>Your progress is saved.</p>
+      <div class="actions">
+        <button id="resumeBtn" class="primary">Resume Quiz</button>
+        <button id="newTestPausedBtn" class="secondary">Start New Random Test</button>
+      </div>
+    </section>
+
+    <section id="quizArea" class="hidden">
+      <section class="stats">
+        <div><span>Progress</span><b id="statProgress">0/50</b></div>
+        <div><span>Correct</span><b id="statScore">0</b></div>
+        <div><span>Wrong</span><b id="statWrong">0</b></div>
+        <div><span>Time</span><b id="statTime">00:00</b></div>
+      </section>
+
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+
+      <section class="card question-card">
+        <div class="meta">
+          <span id="randomPosition">Random position 1 of 50</span>
+          <span id="pdfQuestionNumber">PDF Question #151</span>
+          <span>Pool 151-200</span>
+        </div>
+
+        <h2 id="questionText"></h2>
+        <p id="multiHint" class="small hidden">Multiple answers: choose all correct options, then tap Submit Answer.</p>
+
+        <div id="options" class="options"></div>
+
+        <div id="feedback" class="feedback"></div>
+
+        <div class="actions">
+          <button id="prevBtn" class="secondary">Previous</button>
+          <button id="submitBtn" class="primary">Submit Answer</button>
+          <button id="nextBtn" class="primary hidden">Next</button>
+          <button id="pauseBtn" class="ghost">Pause</button>
+        </div>
+      </section>
+    </section>
+
+    <section id="resultsCard" class="card hidden">
+      <h2>Test Finished</h2>
+      <div class="result-grid">
+        <div><span>Score</span><b id="finalScore">0/50</b></div>
+        <div><span>Percent</span><b id="finalPercent">0%</b></div>
+        <div><span>Wrong</span><b id="finalWrong">0</b></div>
+        <div><span>Time</span><b id="finalTime">00:00</b></div>
+      </div>
+      <div class="actions">
+        <button id="reviewBtn" class="secondary">Show / Hide Review</button>
+        <button id="restartBtn" class="primary">Start New Random Test</button>
+      </div>
+      <div id="reviewArea" class="review hidden"></div>
+    </section>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
